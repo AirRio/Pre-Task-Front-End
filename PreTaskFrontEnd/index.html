@@ -15,7 +15,7 @@
     <form class="centerRegisterForm" name="registerForm">
         <h2>Регистрация</h2>
         <p><label for="first_name">Ваше имя:</label></p>
-        <input type="text" name="first_name" id="name" pattern="[a-zA-Z]{2,64}" required>
+        <input type="text" name="first_name" id="name" pattern="[a-zA-Zа-яА-Я]{2,64}" required>
 
         <p><label for="email">Email:</label></p>
         <input type="email" name="email" id="email" pattern="[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required>
@@ -24,7 +24,7 @@
         <input type="password" name="password" id="password" pattern="[a-zA-Z0-9_-]{8,16}" required>
         
         <p><label for="confirm_password">Подтвердите пароль:</b></p>
-        <input type="password" name="confirm_password" id="confirm_password" pattern="[a-zA-Z0-9_-]{8,16}">
+        <input type="password" name="confirm_password" id="confirm_password" pattern="[a-zA-Z0-9_-]{8,16}" required>
         <br>
         <p class="center"><input type="submit" value="Отправить" onclick="submitform()"></p>
         </form>
